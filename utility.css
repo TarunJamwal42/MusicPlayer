@@ -111,3 +111,37 @@ font-size: 1.5rem;
   ::-webkit-scrollbar-track {
     background-color: #222; /* Dark color for the track */
   }
+
+
+/* .info i{
+    position: absolute;
+    z-index: 10;
+    top: 105px;
+    left: 102px;
+    padding-left: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.2vh;
+    width: 6.2vh;
+    background-color: #3ADF74;
+    font-size:1.8vw;
+    color: black;
+    border-radius: 50%;
+    transition: all 0.3s ease  ;
+    transform: translateY(10%);
+    opacity: 0;
+} */
+/* .info:hover{
+    background-color: #1e1e1e;
+    
+}
+.info:hover i{
+    opacity: 1;
+    transform: translateY(-10%);
+}
+.info .prof{
+    font-size: 15px;
+font-weight:lighter;
+padding-top: 3px;
+} */
