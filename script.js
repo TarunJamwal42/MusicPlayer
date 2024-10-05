@@ -17,8 +17,8 @@ async function getsongs(folder) {
     currfolder = folder
     
 
-    let a = await fetch(`${address}/${currfolder}/`)
-  
+     let a = await fetch(`${address}/${currfolder}/`)
+   
 
 
     let response = await a.text()
@@ -166,7 +166,7 @@ function addsongs(songs) {
     }
 }
 async function main() {
-    let songs = await getsongs("songs/cs")
+    let songs = await getsongs("public/songs/cs")
     document.querySelector(".songinfo").innerHTML = `${songs[0]}`
 
     addsongs(songs)
@@ -270,7 +270,7 @@ async function main() {
         }
     })
     async function changelib(foldername) {
-        let newsongs = await getsongs(`/songs/${foldername}`)
+        let newsongs = await getsongs(`public/songs/${foldername}`)
         songs.splice(0)
         for (const element of newsongs) {
             songs.push(element)
